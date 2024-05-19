@@ -21,7 +21,6 @@ app.post("/convert", (req, res) => {
 
   try {
     const numberConvertInWords = extenso(number);
-    console.log(numberConvertInWords);
     res.json({ words: numberConvertInWords });
   } catch (error) {
     res
